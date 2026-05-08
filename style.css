@@ -2554,3 +2554,29 @@ body{
 footer{
     margin-top:auto;
 }
+
+@media (max-width:768px){
+
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    p,
+    span,
+    a,
+    li{
+        font-weight: 500 !important;
+    }
+
+    .hero-title,
+    .gallery-title,
+    .about-title,
+    .intro-title,
+    .category-title{
+        font-family: 'Bebas Neue', sans-serif !important;
+        letter-spacing: 1px;
+    }
+
+}
