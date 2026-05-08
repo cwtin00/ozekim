@@ -905,13 +905,14 @@ footer a {
 }
 
 .category-title {
-    font-size: 32px !important; /* Başlığı büyüttük */
-    font-weight: 800; /* Daha kalın ve belirgin yaptık */
-    text-transform: uppercase; /* Tüm harfleri büyük yaptık */
-    letter-spacing: 2px; /* Harf arasını açarak daha premium bir hava verdik */
+    font-size: 26px !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #1a1a1a !important;
     margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Arial Black', 'Anton', sans-serif;
+    line-height: 1.2;
 }
 
 .title-line {
@@ -2555,28 +2556,17 @@ footer{
     margin-top:auto;
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    body{
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-    }
-
-    p,
-    span,
-    a,
-    li{
-        font-weight: 500 !important;
-    }
-
-    .hero-title,
-    .gallery-title,
-    .about-title,
-    .intro-title,
     .category-title{
-        font-family: 'Bebas Neue', sans-serif !important;
-        letter-spacing: 1px;
+        font-size:22px !important;
+        line-height:1.3;
+        letter-spacing:0.5px;
+        word-break:break-word;
+    }
+
+    .category-header{
+        padding:18px 14px;
     }
 
 }
