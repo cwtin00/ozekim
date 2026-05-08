@@ -549,7 +549,7 @@ footer p a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: -80px;
+    margin-top: -20px;
 }
 
 /* Üzerine gelince dolma efekti */
@@ -2450,10 +2450,6 @@ footer {
 
 }
 
-/* FLEX ÇAKIŞMA ENGEL */
-body {
-    display: block !important;
-}
 
 .v3-card-text a{
     text-decoration: none;
@@ -2466,3 +2462,95 @@ body {
     color: #eab308;
 }
 
+.marketplace-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    margin:70px auto 40px;
+    flex-wrap:wrap;
+}
+
+.marketplace-card{
+    width:360px;
+    height:110px;
+    background:linear-gradient(135deg,#ff9800,#ffe600);
+    border-radius:24px;
+    padding:0 30px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:22px;
+    text-decoration:none;
+    overflow:hidden;
+    transition:0.35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.marketplace-card:hover{
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 15px 40px rgba(255,170,0,0.30);
+}
+
+/* Trendyol logo */
+.trendyol img{
+    width:120px;
+    object-fit:contain;
+}
+
+/* Hepsiburada logo */
+.hepsiburada img{
+    width:150px;
+    object-fit:contain;
+}
+
+/* Yazılar */
+.marketplace-card span{
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.25;
+    max-width:150px;
+}
+
+/* Mobil */
+@media(max-width:768px){
+
+    .marketplace-links{
+        gap:18px;
+        margin-top:50px;
+    }
+
+    .marketplace-card{
+        width:92%;
+        height:95px;
+        padding:0 20px;
+        gap:16px;
+    }
+
+    .trendyol img{
+        width:90px;
+    }
+
+    .hepsiburada img{
+        width:120px;
+    }
+
+    .marketplace-card span{
+        font-size:16px;
+    }
+}
+
+html,
+body{
+    min-height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+}
+
+footer{
+    margin-top:auto;
+}
